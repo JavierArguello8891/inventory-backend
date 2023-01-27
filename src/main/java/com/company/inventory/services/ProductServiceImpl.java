@@ -223,15 +223,14 @@ public class ProductServiceImpl implements IProductService {
 
 	@Override
 	@Transactional
-	public ResponseEntity<ProductResponseRest> update(Product product, Long categoryId, Long id) {
-		
+	public ResponseEntity<ProductResponseRest> update(Product product, Long categoryId, Long id) {	
 		ProductResponseRest response = new ProductResponseRest();
 		List<Product> list = new ArrayList<>();
 		
 			try {
 				
 				//search category to set in the product object
-				Optional<Category> category = categoryDao.findById(id);
+				Optional<Category> category = categoryDao.findById(categoryId);
 				
 				if ( category.isPresent()) {
 					product.setCategory(category.get());
