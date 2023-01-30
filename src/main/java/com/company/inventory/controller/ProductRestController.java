@@ -1,6 +1,6 @@
 package com.company.inventory.controller;
 
-/*comentario de prueba para complemento de proyecto inventory*/
+/*comentario de prueba para complemento de proyecto inventory prueba*/
 
 import java.io.IOException;
 
