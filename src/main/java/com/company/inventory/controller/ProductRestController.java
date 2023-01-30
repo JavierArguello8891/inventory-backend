@@ -1,5 +1,7 @@
 package com.company.inventory.controller;
 
+/*comentario de prueba para complemento de proyecto inventory*/
+
 import java.io.IOException;
 
 import org.springframework.http.ResponseEntity;
